@@ -5,6 +5,10 @@
   "main": "lib/index.js",
   "author": "Samuel Rounce <samuelrounce@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srounce/redux-observable-expect.git"
+  },
   "scripts": {
     "build": "babel ./src -s -d ./lib",
     "clean": "rm ./lib/*",
