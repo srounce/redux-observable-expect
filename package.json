@@ -1,0 +1,41 @@
+{
+  "name": "redux-observable-expect",
+  "version": "1.0.0",
+  "description": "Test redux-observable epics with ease",
+  "main": "lib/index.js",
+  "author": "Samuel Rounce <samuelrounce@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel ./src -s -d ./lib",
+    "clean": "rm ./lib/*",
+    "test": "jest",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "redux-observable": ">=0.4.0",
+    "rxjs": "5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-preset-react-native": "^3.0.2",
+    "eslint": "^4.6.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.0.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^21.0.1",
+    "jest-cli": "^21.0.1",
+    "redux-observable": ">=0.4.0",
+    "rxjs": "5"
+  },
+  "jest": {
+    "automock": false,
+    "testEnvironment": "node",
+    "verbose": true,
+    "testRegex": "(src/.*\\.(test|spec))\\.js$"
+  }
+}
