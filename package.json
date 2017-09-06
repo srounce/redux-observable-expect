@@ -12,6 +12,7 @@
   "scripts": {
     "build": "babel ./src -s -d ./lib",
     "clean": "rm ./lib/*",
+    "prepublish": "npm run lint && npm run test && npm run build",
     "test": "jest",
     "lint": "eslint src"
   },
